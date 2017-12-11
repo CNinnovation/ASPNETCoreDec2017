@@ -14,9 +14,7 @@
 Questions:
 
 1. How is the *HelloController* instantiated?
-via ServiceProvider
 2. What happens if the IHelloService implementation cannot be found?
-fliegt um die Ohren, ausser es gibt parameterlosen Contruktor (gefährlich) -> Was passiert mit mehreren Konstruktoren?
 
 ## Configuration
 
@@ -31,9 +29,7 @@ fliegt um die Ohren, ausser es gibt parameterlosen Contruktor (gefährlich) -> W
 Questions:
 
 1. How can inner sections be retrieved?
-GetSection
 2. Is it possible to get all configured values?
-?
 3. What happens if the same value is configured multiple times?
 4. What are user secrets good for?
 
