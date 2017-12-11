@@ -1,0 +1,9 @@
+﻿{
+  "MySection1": {
+    "MySetting1": "My Value"
+     ,"Username":  "PaulJE"
+  },
+  "ConnectionStrings": {
+    "MyBooksConnection": "Connection string to the Books database"
+  }
+}
