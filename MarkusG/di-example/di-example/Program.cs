@@ -11,6 +11,8 @@ namespace di_example
             Container();
         }
 
+
+
         public static IServiceProvider AppServices { get; private set; }
 
         private static void Container()
