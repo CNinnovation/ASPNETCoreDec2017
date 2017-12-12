@@ -14,9 +14,9 @@
 
 ```html
 <form method="post" action="/Sample4">
-<input type="text" id="text1" name="text1" />
-<br />
-<button type="submit">Submit</button>
+  <input type="text" id="text1" name="text1" />
+  <br />
+  <button type="submit">Submit</button>
 </form>
 ```
 
