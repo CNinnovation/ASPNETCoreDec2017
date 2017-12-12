@@ -25,18 +25,18 @@
 ## Dependency Injection
 
 1. Create a custom service and a concrete implementation class
-2. Add this service to the dependency injection container
-3. Create a custom controller *SampleController* with constructor injection
-4. Create another *Map* and use the custom controller
+1. Add this service to the dependency injection container
+1. Create a custom controller *SampleController* with constructor injection
+1. Create another *Map* and use the custom controller
 
 ##  Middleware
 
 1. Create and use a custom middleware
-2. Define an extension method for easy use of the middleware
-3. Add your own middleware to be used for each request
+1. Define an extension method for easy use of the middleware
+1. Add your own middleware to be used for each request
 
 Questions:
 
 1. What needs to be done to return static content like HTML, CSS, images...?
-2. Which dependency injection framework is used with ASP.NET Core?
-3. What are examples for pre-defined middleware?
+1. Which dependency injection framework is used with ASP.NET Core?
+1. What are examples for pre-defined middleware?
