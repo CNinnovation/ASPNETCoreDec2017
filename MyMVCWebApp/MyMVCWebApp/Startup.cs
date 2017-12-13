@@ -33,12 +33,13 @@ namespace MyMVCWebApp
             {
                 routes.MapRoute("default",
                     template: "{controller}/{action}/{id?}",
-                    defaults: new { controller = "Home", action="Index" });
+                    defaults: new { controller = "Home", action = "Index" });
 
                 routes.MapRoute("calc",
                     template: "Math/{action}/{x}/{y}",
-                    defaults: new { controller = "Calc"});
+                    defaults: new { controller = "Calc" });
             });
+
 
             app.Run(async (context) =>
             {

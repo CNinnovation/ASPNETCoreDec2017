@@ -11,7 +11,9 @@ namespace MyMVCWebApp.ViewComponents
     {
         public Task<IViewComponentResult> InvokeAsync(string data, Book book)
         {
-            return Task.FromResult<IViewComponentResult>(View(data as object));
+            // return Task.FromResult<IViewComponentResult>(View(data as object));
+            // using tuple
+            return Task.FromResult<IViewComponentResult>(View((data: data, book: book)));
         }
     }
 }

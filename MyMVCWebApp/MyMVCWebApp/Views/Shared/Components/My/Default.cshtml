@@ -1,8 +1,10 @@
-﻿@model string
+﻿@*@model string*@
+@model ValueTuple<string, Book>
 @*
     For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 *@
 
 <h1>This is a view component</h1>
 
-<h2>@Model</h2>
+<h2>@Model.Item1</h2>
+<h3>@Model.Item2.Title</h3>
