@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Book>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Books Index</h1>
+
+    <div>@ViewBag.MyData</div>
+    <div>@ViewData["MyData"]</div>
+    @foreach (var b in Model) {
+        <div>@b.Title</div>
+    }
+
+    @{
+    }
+
+
+</body>
+</html>

@@ -26,11 +26,14 @@ namespace MyMVCWebApp
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+
             // app.UseMvcWithDefaultRoute();
             app.UseMvc(routes =>
             {
                 routes.MapRoute("default",
-                    template: "{controller}/{action}/{id?}");
+                    template: "{controller}/{action}/{id?}",
+                    defaults: new { controller = "Home", action="Index" });
 
                 routes.MapRoute("calc",
                     template: "Math/{action}/{x}/{y}",

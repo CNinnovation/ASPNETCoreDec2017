@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "UseMyViewComponent";
+}
+
+<h2>UseMyViewComponent</h2>
+
+@await Component.InvokeAsync("My", new Dictionary<string, object>()
+{
+    ["data"] = "data from the view to the view component",
+    ["book"] = new Book { BookId = 42, Title = "sample book", Publisher = "self"}
+
+})
+

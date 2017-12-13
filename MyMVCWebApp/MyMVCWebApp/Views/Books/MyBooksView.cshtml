@@ -1,0 +1,9 @@
+﻿@model MyBooksViewModel
+@{
+    ViewData["Title"] = "MyBooksView";
+}
+
+<h2>@Model.Title</h2>
+
+@Html.Partial("BooksPartialView", Model.Books)
+

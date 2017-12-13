@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "UsingALayout";
+}
+
+<h2>UsingALayout</h2>
+
+<div>from the UsingALayout view</div>
+
+@{ 
+    Html.RenderPartial("MyPartialView");
+}
+
+@Html.Partial("MyPartialView")
+
+
+@section Mysection {
+    <div>section from the view</div>
+}
