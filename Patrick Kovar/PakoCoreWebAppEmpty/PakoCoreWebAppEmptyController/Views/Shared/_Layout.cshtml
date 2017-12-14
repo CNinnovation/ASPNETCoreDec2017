@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>Layout wird verwendet</div>
+    <div>
+        @RenderBody()
+    </div>
+    <div>
+        <footer>
+            @RenderSection("MyFooter", required: false)
+        </footer>
+    </div>
+</body>
+</html>
