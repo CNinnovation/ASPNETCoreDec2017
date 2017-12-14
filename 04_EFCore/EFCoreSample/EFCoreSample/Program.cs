@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace EFCoreSample
 {
@@ -23,6 +24,9 @@ namespace EFCoreSample
         {
             using (var context = new BooksContext())
             {
+                //int bookid = 42;
+
+                //context.Database.ExecuteSqlCommand($"SELECT * FROM Books Where BookId == {bookid}");
                 context.Books.Add(new Book { Title = "Professional C# 6", Publisher = "Wrox Press" });
                 int recordschanged = context.SaveChanges();
                 Console.WriteLine($"records changed: {recordschanged}");

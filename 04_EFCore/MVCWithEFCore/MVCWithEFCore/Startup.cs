@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MVCWithEFCore.Models;
+using MVCWithEFCore.Services;
 
 namespace MVCWithEFCore
 {
@@ -28,6 +29,7 @@ namespace MVCWithEFCore
             {
                 options.UseSqlServer(Configuration.GetConnectionString("BooksConnection"));
             });
+            services.AddTransient<IBooksService, BooksService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
